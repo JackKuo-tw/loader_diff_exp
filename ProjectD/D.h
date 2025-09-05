@@ -1,11 +1,16 @@
 #pragma once
 
-#include "B.h"
+#include "../ProjectB/B.h"
 
 #ifdef PROJECTD_EXPORTS
 #define PROJECTD_API __declspec(dllexport)
 #else
 #define PROJECTD_API __declspec(dllimport)
+#endif
+
+#ifndef WIN32
+#undef PROJECTD_API
+#define PROJECTD_API
 #endif
 
 namespace ProjectD

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "TraceFlagList.h"
+#include "../ProjectA/TraceFlagList.h"
 
 namespace ProjectB
 {
